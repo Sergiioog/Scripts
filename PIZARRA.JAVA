@@ -80,15 +80,15 @@ function funcionEjecucion {
 
         if [[ $color == "R" ]]
         then
-            cat pizarra.java
+            java pizarra.java ${archivo} R
             exit
         elif [[ $color == "G" ]]
         then
-            pizarra.java
+            java pizarra.java ${archivo} G
             exit
         elif [[ $color == "Y" ]]
         then
-            pizarra.java
+            java pizarra.java ${archivo} Y
         else
             echo "No se puede ejecutar"
         
